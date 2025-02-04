@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    border: 2px solid #000;  /* 給 form 加黑色2px邊框 */
+    padding: 20px;           /* 讓內容和邊框之間有內邊距 */
+    width: 300px;            /* 設定 form 寬度 */
+    margin: 0 auto;          /* 讓 form 在頁面水平置中 */
+    border-radius: 10px;     /* 圓角邊框讓外框看起來更柔和 */
+    background-color: #f9f9f9; /* 背景色讓框框更明顯 */
+  }
+  
+  input, button {
+    display: block;          /* 讓 input 和 button 變成區塊元素，換行排列 */
+    width: 100%;             /* 讓元素填滿 form 的寬度 */
+    padding: 10px;           /* 內邊距讓輸入框和按鈕看起來更舒適 */
+    margin-bottom: 15px;     /* 每個元素下方加 15px 間距 */
+    border: 1px solid #ccc;  /* 給 input 和 button 輕微邊框 */
+    border-radius: 5px;      /* 輸入框和按鈕也加點圓角 */
+    box-sizing: border-box;  /* 確保 padding 不會影響元素的總寬度 */
+  }
+  
+  button {
+    background-color: #4CAF50; /* 綠色背景 */
+    color: white;              /* 文字白色 */
+    border: none;              /* 移除邊框 */
+    cursor: pointer;           /* 滑鼠移過去變成指標 */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* 滑鼠移上去時改變按鈕顏色 */
+  }
+  
