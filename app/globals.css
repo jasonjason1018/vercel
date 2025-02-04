@@ -19,3 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+input, button {
+  border: 2px solid #000; /* 黑色2px實線邊框 */
+  padding: 10px;          /* 增加內邊距讓內容不會貼邊 */
+  border-radius: 5px;     /* 圓角邊框，讓邊框看起來更柔和 */
+}
