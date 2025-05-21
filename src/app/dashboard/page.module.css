@@ -1,0 +1,11 @@
+/* page.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 水平置中 */
+    align-items: center;     /* 垂直置中 */
+    height: 100vh;           /* 滿版高度 */
+    background-color: #f0f2f5;
+  }
+  
